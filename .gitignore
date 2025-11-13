@@ -1,27 +1,27 @@
-# Virtual Environment
-venv/
-env/
-
-# Environment variables (API KEYS - NEVER COMMIT!)
+# Environment variables (API keys)
 .env
 
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
 # Backups
 backups/
-*.bak
-
-# Logs
-*.log
+*.backup

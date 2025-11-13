@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     height: 90vh;
     background: white;
     border-radius: 12px;
@@ -60,8 +60,9 @@ body {
 }
 
 .message.assistant {
-    background: #e8f4f8;
-    margin-right: 20%;
+    background: #ffffff;
+    margin-right: 10%;
+    border: 1px solid #e5e5e5;
 }
 
 .message-label {
@@ -75,6 +76,69 @@ body {
 .message-content {
     white-space: pre-wrap;
     line-height: 1.6;
+    color: #2d2d2d;
+}
+
+/* Multi-agent response styling */
+.multi-agent-response {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.agent-response {
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 6px;
+    padding: 12px;
+    transition: all 0.2s ease;
+}
+
+.agent-response:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Agent-specific colors */
+.pm-response {
+    border-left-color: #28a745;
+    background: #f0fdf4;
+}
+
+.architect-response {
+    border-left-color: #007bff;
+    background: #eff6ff;
+}
+
+.expert-response {
+    border-left-color: #6f42c1;
+    background: #f8f4ff;
+}
+
+.agent-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.agent-icon {
+    font-size: 20px;
+}
+
+.agent-name {
+    font-weight: 600;
+    font-size: 13px;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.agent-content {
+    color: #374151;
+    line-height: 1.6;
+    font-size: 14px;
 }
 
 .input-area {
@@ -119,6 +183,7 @@ body {
     cursor: not-allowed;
 }
 
+/* Loading indicator */
 .loading {
     display: inline-block;
     width: 12px;
@@ -132,4 +197,23 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar styling */
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

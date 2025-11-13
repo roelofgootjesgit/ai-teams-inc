@@ -129,7 +129,7 @@ function addLoadingIndicator() {
     
     const contentDiv = document.createElement('div');
     contentDiv.className = 'message-content';
-    contentDiv.innerHTML = '<span class="loading"></span> Team is analyzing your question...';
+    contentDiv.innerHTML = '<span class="loading"></span> Team is discussing... (this may take 30-45 seconds)';
     
     messageDiv.appendChild(label);
     messageDiv.appendChild(contentDiv);
@@ -209,5 +209,5 @@ userInput.addEventListener('keydown', (e) => {
 
 // Initial greeting
 window.onload = () => {
-    addMessage('Hello! I am your AI Team consisting of:\n\n🎯 Project Manager - Coordinates tasks\n🏗️ AI Architect - Technical expertise\n💼 Domain Expert - Business perspective\n\nAsk me anything!', 'assistant');
+    addMessage('Hello! I am your AI Team with DISCUSSION capabilities:\n\n🎯 Project Manager - Coordinates & synthesizes\n🏗️ AI Architect - Technical expertise\n💼 Domain Expert - Business perspective\n\nAgents will DISCUSS your question, building on each other\'s insights. This takes 30-45 seconds but provides deeper analysis!\n\nAsk me anything!', 'assistant');
 };

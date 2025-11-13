@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+env/
+
+# Environment variables (API KEYS - NEVER COMMIT!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backups
+backups/
+*.bak
+
+# Logs
+*.log
